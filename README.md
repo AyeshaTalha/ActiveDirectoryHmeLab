@@ -76,6 +76,10 @@ Windows Server installation ISO (e.g., Windows Server 2009 and 2010).
 <p align="center">
 <img src="https://imgur.com/wVAqGuI.png" height="80%" width="80%">
 <br />
+<p align="center">
+<img src="https://imgur.com/sFTcCA1.png" height="80%" width="80%">
+<br />
+
 
 
 
