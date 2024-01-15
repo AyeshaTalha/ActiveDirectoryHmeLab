@@ -2,6 +2,12 @@
 <h2>Description:</h2>
 This project guide outlines the steps to set up an Active Directory (AD) home lab using VirtualBox, incorporating a Domain Controller (DC) with two network adapters. The DC will be configured to connect to the internet through one adapter using DHCP and establish an internal network using the second adapter with a static IP address (172.16.0.1). A client machine will connect to the internal network through the DC, allowing internet access through the DC.
 
+<h2>Project Architecture:</h2>
+<p align="center">
+<img src=https://imgur.com/xm5huv7.png" height="80%" width="80%">
+
+
+
 <h2> Pre-Requisites:</h2>
 Before starting, ensure you have the following:
 
@@ -11,26 +17,19 @@ Windows Server installation ISO (e.g., Windows Server 2009 and 2010).
 
 <h2>Project Workflow:</h2>
 
-1. Design the architecture: Define the components and services required for the web application, including API Gateway, Lambda functions, DynamoDB tables, S3 buckets, and IAM.
+1. If you dont already have Virtual Box downloaded then go to virtualbox download and download the correct software according to the Operating System you are using. After downloading the Virtual Box, also download the extension pack for the Virtual Box.
+
 <p align="center">
-Serverless Architecture: <br/>
-<p align="center">
-<img src="https://imgur.com/Je2E7Ju.png" height="80%" width="80%">
+<img src=https://imgur.com/DRa0Hfv.png" height="80%" width="80%">
 <br />
 <p align="center">
-<img src="https://imgur.com/R4cMuGd.png" height="80%" width="80%">
-<br />
-<p align="center">
-<img src="https://imgur.com/qebd2lc.png" height="80%" width="80%">
+<img src="https://imgur.com/GmKrO9q.png" height="80%" width="80%">
 <br />
 
-2. To host our Website, we will choose Amplify. With Amplify, we can build and host websites. For our purpose, since our website is very simple we will create an html file in a text editor on our local machine and just use Amplify to deploy and host that webpage. The code for this is given above in the INDEX.HTML ORIGINAL file. Just copy and Paste this code in your file. Once you have created this file, Zip it by just right clicking on the file and selecting compress. 
-<p align="center">
-<img src="https://imgur.com/aVIMe8P.png" height="80%" width="80%">
+2. We are going to use Windows Server 2009 and Windows Server 2010 for our DC machine and Client1 machine respectively. To use these, we need to download the ISO's of these server. Go to windows server 2009 download and download the ISO's for both the servers. Make sure you remember the location where you're going to save these downloads. We are going to need that later.           
+<img src="https://imgur.com/v56YnjO.png" height="80%" width="80%">
 <br />
-<p align="center">
-<img src="https://imgur.com/He6z40O.png" height="80%" width="80%">
-<br />
+
 
 3. On the AWS Console, navigate to AWS Amplify and click on New App. Here, just click on Deploy Without Git Provider, Enter a name for the App and Environment name and Choose and upload the Zip file.
 <p align="center">
