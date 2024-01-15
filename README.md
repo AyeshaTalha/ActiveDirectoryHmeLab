@@ -2,7 +2,7 @@
 <h2>Description:</h2>
 This project guide outlines the steps to set up an Active Directory (AD) home lab using VirtualBox, incorporating a Domain Controller (DC) with two network adapters. The DC will be configured to connect to the internet through one adapter using DHCP and establish an internal network using the second adapter with a static IP address (172.16.0.1). A client machine will connect to the internal network through the DC, allowing internet access through the DC.
 
-<h2> Pre-Requisits:</h2>
+<h2> Pre-Requisites:</h2>
 Before starting, ensure you have the following:
 
 VirtualBox installed on your host machine.
