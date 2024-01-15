@@ -31,7 +31,8 @@ Windows Server installation ISO (e.g., Windows Server 2009 and 2010).
 <br />
 
 
-3. On the AWS Console, navigate to AWS Amplify and click on New App. Here, just click on Deploy Without Git Provider, Enter a name for the App and Environment name and Choose and upload the Zip file.
+
+3. First, let us create the first Virtual Machine - DC. 
 <p align="center">
 <img src="https://imgur.com/XqZrgem.png" height="80%" width="80%">
 <br />
