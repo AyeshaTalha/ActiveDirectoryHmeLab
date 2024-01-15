@@ -26,13 +26,14 @@ Windows Server installation ISO (e.g., Windows Server 2009 and 2010).
 <img src="https://imgur.com/GmKrO9q.png" height="80%" width="80%">
 <br />
 
-2. We are going to use Windows Server 2009 and Windows Server 2010 for our DC machine and Client1 machine respectively. To use these, we need to download the ISO's of these server. Go to windows server 2009 download and download the ISO's for both the servers. Make sure you remember the location where you're going to save these downloads. We are going to need that later.           
+2. We are going to use Windows Server 2009 and Windows Server 2010 for our DC machine and Client1 machine respectively. To use these, we need to download the ISO's of these server. Go to windows server 2009 download and download the ISO's for both the servers. Make sure you remember the location where you're going to save these downloads. We are going to need that later.
+<p align="center">        
 <img src="https://imgur.com/v56YnjO.png" height="80%" width="80%">
 <br />
 
 
 
-3. First, let us create the first virtual machine - DC. 
+4. First, let us create the first virtual machine - DC. 
 <p align="center">
 <img src="https://imgur.com/ELZocHt.png" height="80%" width="80%">
 <br />
