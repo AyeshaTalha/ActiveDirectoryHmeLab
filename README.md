@@ -32,16 +32,51 @@ Windows Server installation ISO (e.g., Windows Server 2009 and 2010).
 
 
 
-3. First, let us create the first Virtual Machine - DC. 
+3. First, let us create the first virtual machine - DC. 
 <p align="center">
-<img src="https://imgur.com/XqZrgem.png" height="80%" width="80%">
+<img src="https://imgur.com/ELZocHt.png" height="80%" width="80%">
 <br />
 <p align="center">
-<img src="https://imgur.com/4GSgo4a.png" height="80%" width="80%">
+<img src="https://imgur.com/EO2Xnxp.png" height="80%" width="80%">
 <br />
 <p align="center">
-<img src="https://imgur.com/ZBPB2LS.png" height="80%" width="80%">
+<img src="https://imgur.com/aAJPETh.png" height="80%" width="80%">
 <br />
+<p align="center">
+<img src="https://imgur.com/RHTDsQe.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/Mul0KZL.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/H96Cd2z.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/9IdtuNb.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/uzo8kLZ.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/uzo8kLZ.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/4Y6cBBI.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/u5f6ZHO.png" height="80%" width="80%">
+<br />
+<p align="center">
+ <img src="https://imgur.com/j2T9tD4.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/RnNMoZh.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/wVAqGuI.png" height="80%" width="80%">
+<br />
+
+
 
 4. We need to create a Lamda Function that will process our math functionality. From AWS Console, navigate to AWS Lamda. Click on New function. We are going to author this from scratch. Enter thr name of thr Function, Runtime as the latest version of Python and click on Create Function.On the main page of Lamda, scroll down to the Code block. The code for this Lamda Function is given in the LamdaFunctionOriginal file above. Just copy and paste the code. Click on Deploy and we are done.
 <p align="center">
