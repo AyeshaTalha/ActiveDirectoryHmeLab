@@ -13,7 +13,7 @@ Before starting, ensure you have the following:
 
 VirtualBox installed on your host machine.
 Adequate system resources (RAM, CPU) for running multiple virtual machines.
-Windows Server installation ISO (e.g., Windows Server 2009 and 2010).
+Windows Server installation ISO (e.g., Windows Server 2019 and 2010).
 
 <h2>Project Workflow:</h2>
 
@@ -26,14 +26,12 @@ Windows Server installation ISO (e.g., Windows Server 2009 and 2010).
 <img src="https://imgur.com/GmKrO9q.png" height="80%" width="80%">
 <br />
 
-2. We are going to use Windows Server 2009 and Windows Server 2010 for our DC machine and Client1 machine respectively. To use these, we need to download the ISO's of these server. Go to windows server 2009 download and download the ISO's for both the servers. Make sure you remember the location where you're going to save these downloads. We are going to need that later.
+2. We are going to use Windows Server 2019 and Windows Server 2010 for our DC machine and Client1 machine respectively. To use these, we need to download the ISO's of these server. Go to windows server 2009 download and download the ISO's for both the servers. Make sure you remember the location where you're going to save these downloads. We are going to need that later.
 <p align="center">        
 <img src="https://imgur.com/v56YnjO.png" height="80%" width="80%">
 <br />
 
-
-
-4. First, let us create the first virtual machine - DC. 
+3. First, let us create the first virtual machine - DC. 
 <p align="center">
 <img src="https://imgur.com/ELZocHt.png" height="80%" width="80%">
 <br />
@@ -80,23 +78,51 @@ Windows Server installation ISO (e.g., Windows Server 2009 and 2010).
 <img src="https://imgur.com/sFTcCA1.png" height="80%" width="80%">
 <br />
 
-
-
-
-4. We need to create a Lamda Function that will process our math functionality. From AWS Console, navigate to AWS Lamda. Click on New function. We are going to author this from scratch. Enter thr name of thr Function, Runtime as the latest version of Python and click on Create Function.On the main page of Lamda, scroll down to the Code block. The code for this Lamda Function is given in the LamdaFunctionOriginal file above. Just copy and paste the code. Click on Deploy and we are done.
+3. Set a password for the inbuilt administrator account. I recommend using the same password for all the things in this lab so you don't forget the password. To start off, we need to setup the ip addressing. From the architecture diagram, we see that there are two NIC's attached to this DC machine. One is connected to the internet which gets its IP address automatically from our home network and the other is connected to the internal network which we have to be set manually. for our convenience let's rename the network's according to our architecture diagram and then change the internal network IP to 172.16.0.1 with subnet mask 255.255.255.0 and DNS as 127.0.0.1(loopback address).
+And also change the name of the PC to DC.
 <p align="center">
-<img src="https://imgur.com/XnvzGhE.png" height="80%" width="80%">
+<img src="https://imgur.com/5VHQbyt.png" height="80%" width="80%">
 <br />
 <p align="center">
-<img src="https://imgur.com/b8ejCFq.png" height="80%" width="80%">
-<br />
-
-5. Now, we need something to invoke our Math Functionality. For this, we will use API Gateway. This is a core functionality in AWS which we can use to create our own APIs. In a Serverless Architrcture, it is the perfect way to invoke our Lamda Function. From the AWS Console, navigate to API Gateway and Click on Create API. We are going to use a REST API. Give it a name and click on Create API. 
+<img src="https://imgur.com/8e3dUIo.png" height="80%" width="80%">
+<br /> 
 <p align="center">
-<img src="https://imgur.com/vCsjcMa.png" height="80%" width="80%">
+<img src="https://imgur.com/8aQcE30.png" height="80%" width="80%">
 <br />
 <p align="center">
-<img src="https://imgur.com/2U90adI.png" height="80%" width="80%">
+<img src="https://imgur.com/X1X2G0G.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/lp98MvI.png" height="80%" width="80%">
+<br /> 
+<p align="center">
+<img src="https://imgur.com/1WfFcVE.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/ZP5TQMg.png" height="80%" width="80%">
+<br />
+<img src="https://imgur.com/FnzvBeb.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/qhPUNGN.png" height="80%" width="80%">
+<br /> 
+<p align="center">
+<img src="https://imgur.com/PO4zgz5.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/eIGbXdG.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/0OOAnWS.png" height="80%" width="80%">
+<br /> 
+<p align="center">
+<img src="https://imgur.com/LnQKgCN.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/bOB6yX2.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/0T4Dgxw.png" height="80%" width="80%">
 <br />
 
 6. Click on the API created. On the lefthand side, click on Resources. On the righthand side, click on "/". From thr Actions menu, select Create Method. The type of method will be POST. Enter the Lamda Function name and create the POST method as shown below:
