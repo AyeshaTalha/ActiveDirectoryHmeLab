@@ -125,18 +125,33 @@ And also change the name of the PC to DC.
 <img src="https://imgur.com/0T4Dgxw.png" height="80%" width="80%">
 <br />
 
-6. Click on the API created. On the lefthand side, click on Resources. On the righthand side, click on "/". From thr Actions menu, select Create Method. The type of method will be POST. Enter the Lamda Function name and create the POST method as shown below:
+4.The next step would be to download Active Directory on the machine DC. Go to the Server Manager and follow the below given steps to install the Active Directory and create users.
 <p align="center">
-<img src="https://imgur.com/YTPA3rb.png" height="80%" width="80%">
+<img src="https://imgur.com/eypYhXW.png" height="80%" width="80%">
 <br />
 <p align="center">
-<img src="https://imgur.com/8a0masw.png" height="80%" width="80%">
+<img src="https://imgur.com/EOa6Ubz.png" height="80%" width="80%">
 <br />
 <p align="center">
-<img src="https://imgur.com/srGDfkU.png" height="80%" width="80%">
+<img src="https://imgur.com/gnOLj49.png" height="80%" width="80%">
 <br />
 <p align="center">
-<img src="https://imgur.com/srGDfkU.png" height="80%" width="80%">
+<img src="https://imgur.com/GWVA3Ho.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/Xw6zrRD.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/EuwlskC.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/kQhVsoz.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/p7SX9VB.png" height="80%" width="80%">
+<br />
+ <p align="center">
+<img src="https://imgur.com/ib8OCyX.png" height="80%" width="80%">
 <br />
 
 7. Next, we must Enable CORS (Cross Origin Resourse Sharing) so that our website can interact with the lamda function. To do so, click on the POST method and from Actions menu select Enable CORS. Click on Deploy API to deploy and enter the Deployment stage as dev. Copy the Invoke URL and keep it handy. We will be using it later.
