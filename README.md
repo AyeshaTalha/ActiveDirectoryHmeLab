@@ -78,7 +78,7 @@ Windows Server installation ISO (e.g., Windows Server 2019 and 2010).
 <img src="https://imgur.com/sFTcCA1.png" height="80%" width="80%">
 <br />
 
-3. Set a password for the inbuilt administrator account. I recommend using the same password for all the things in this lab so you don't forget the password. To start off, we need to setup the ip addressing. From the architecture diagram, we see that there are two NIC's attached to this DC machine. One is connected to the internet which gets its IP address automatically from our home network and the other is connected to the internal network which we have to be set manually. for our convenience let's rename the network's according to our architecture diagram and then change the internal network IP to 172.16.0.1 with subnet mask 255.255.255.0 and DNS as 127.0.0.1(loopback address).
+4. Set a password for the inbuilt administrator account. I recommend using the same password for all the things in this lab so you don't forget the password. To start off, we need to setup the ip addressing. From the architecture diagram, we see that there are two NIC's attached to this DC machine. One is connected to the internet which gets its IP address automatically from our home network and the other is connected to the internal network which we have to be set manually. for our convenience let's rename the network's according to our architecture diagram and then change the internal network IP to 172.16.0.1 with subnet mask 255.255.255.0 and DNS as 127.0.0.1(loopback address).
 And also change the name of the PC to DC.
 <p align="center">
 <img src="https://imgur.com/5VHQbyt.png" height="80%" width="80%">
@@ -125,7 +125,7 @@ And also change the name of the PC to DC.
 <img src="https://imgur.com/0T4Dgxw.png" height="80%" width="80%">
 <br />
 
-4.The next step would be to download Active Directory on the machine DC. Go to the Server Manager and follow the below given steps to install the Active Directory and create users.
+5.The next step would be to download Active Directory on the machine DC. Go to the Server Manager and follow the below given steps to install the Active Directory and create users.
 <p align="center">
 <img src="https://imgur.com/eypYhXW.png" height="80%" width="80%">
 <br />
@@ -154,7 +154,7 @@ And also change the name of the PC to DC.
 <img src="https://imgur.com/ib8OCyX.png" height="80%" width="80%">
 <br />
 
-5. now, we have to promote this machine as the domain controller.To do so, click on the little flag option on the righthand corner of the screen and click on promote this achine as the domain controller. Click on Add a new forest and enter the domain name as mydoamin.com. Follow the steps and just click next to every option and click on install. The machine will reboot.
+6. Now, we have to promote this machine as the domain controller.To do so, click on the little flag option on the righthand corner of the screen and click on promote this achine as the domain controller. Click on Add a new forest and enter the domain name as mydoamin.com. Follow the steps and just click next to every option and click on install. The machine will reboot.
 <img src=".png" height="80%" width="80%">
 <br />
 <p align="center">
@@ -175,41 +175,52 @@ And also change the name of the PC to DC.
 <img src="https://imgur.com/nY3nuJt.png" height="80%" width="80%">
 <br />
 
-
-
-8. Now we need to setup a database to store the results. We will use DynamoDB for this. Navigate to DynamoDB and Click on Create Table. Enter the name and create table. Copy the ARN of this table.
+7. When the machine reboots now you can see the MYDOMAIN/ADMIN account instead of just the ADMINISTRATOR account that we saw earlier. This means that our machine now is the domain controller of the domain Mydomain.com. Sign in with the admin password.
 <p align="center">
-<img src="https://imgur.com/WKxFXsx.png" height="80%" width="80%">
-<br />
-<p align="center">
-<img src="https://imgur.com/MZlcvLu.png" height="80%" width="80%">
+<img src="https://imgur.com/8RpuM2U.png" height="80%" width="80%">
 <br />
 
-9. Next, we have to give our Lamda Function the permission to write results to the DynamoDB table. Navigate back to the our Lamda Function and Scroll down to the Configuration section. Click on the execution role and select add inline policy. Name the policy and click on JSON. The code for this policy is given above in the ExecutionRolePolicyJSON file. Copy and paste the code and create the policy. Make sure you enter the ARN of the Table you created in the poilcy. 
+8. Now we are going to create our own dedicated Admin account istead of using the built-in Admin account. To do so, click on Start>Windows Administrative Tools>Active Directory Users and Computers. Right click on mydomain>new>organizational unit. Create an OU named Admins. To create a new user in the OU, right click on Admins>new>user. Create a new user called Ayesha Talha with a login Id. To make this user as admin, right click on the user > properties > member of > Add. In the object names section, add Domain Admins and apply changes. now sign out of the current admin profile by clicking on start > profile > sign out. On the main menu, click on other user and now you can login with the credentials of the admin user we just created. 
 <p align="center">
-<img src="https://imgur.com/My4oAHR.png" height="80%" width="80%">
+<img src="https://imgur.com/8MANqQz.png" height="80%" width="80%">
 <br />
 <p align="center">
-<img src="https://imgur.com/yYlLunx.png" height="80%" width="80%">
+<img src="https://imgur.com/qtvynkK.png" height="80%" width="80%">
 <br />
 <p align="center">
-<img src="https://imgur.com/X0lQ9zG.png" height="80%" width="80%">
+<img src="https://imgur.com/tjKQlx5.png" height="80%" width="80%">
 <br />
 <p align="center">
-<img src="https://imgur.com/i9fiX9S.png" height="80%" width="80%">
-<br />
-
-10. Navigate to the Code tab of the Lamda Function. We need to make some changes to our code so that the Lamda Function can write the results to the table. It wasn't doing that before. The updated code is given above in the LamdaFunctionFinal file. Copy and paste the code and click on Delopy.
-<p align="center">
-<img src="https://imgur.com/YsAMw1C.png" height="80%" width="80%">
-<br />
-
-11. We must update our Index.html file in order to invoke the API from our website. Copy the code from Index.html file above and paste it in your file. Make sure you add your API gateway endpoint.   Compress the file and add it to our Amplify website.
-<p align="center">
-<img src="https://imgur.com/itA0zVR.png" height="80%" width="80%">
+<img src="https://imgur.com/MagaNkf.png" height="80%" width="80%">
 <br />
 <p align="center">
-<img src="https://imgur.com/K3urd8N.png" height="80%" width="80%">
+<img src="https://imgur.com/zRPVDQq.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/Wcw4lvt.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/qQkUlVy.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/oMctKWz.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/RzV5WiF.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/7a80Hs7.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/lE1gVNk.png" height="80%" width="80%">
+<br />
+ 
+9. Sign out of the current admin profile by clicking on start > profile > sign out. On the main menu, click on other user and now you can login with the credentials of the admin user we just created.
+<p align="center">
+<img src="https://imgur.com/yxlBfOb.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/SjyTbj5.png" height="80%" width="80%">
 <br />
 
 12. Click on the URL of the website and there it is. Enter a Base number and an exponent number and hit Calculate. It will give the result.
