@@ -154,19 +154,28 @@ And also change the name of the PC to DC.
 <img src="https://imgur.com/ib8OCyX.png" height="80%" width="80%">
 <br />
 
-7. Next, we must Enable CORS (Cross Origin Resourse Sharing) so that our website can interact with the lamda function. To do so, click on the POST method and from Actions menu select Enable CORS. Click on Deploy API to deploy and enter the Deployment stage as dev. Copy the Invoke URL and keep it handy. We will be using it later.
-<p align="center">
-<img src="https://imgur.com/SItVLAs.png" height="80%" width="80%">
+5. now, we have to promote this machine as the domain controller.To do so, click on the little flag option on the righthand corner of the screen and click on promote this achine as the domain controller. Click on Add a new forest and enter the domain name as mydoamin.com. Follow the steps and just click next to every option and click on install. The machine will reboot.
+<img src=".png" height="80%" width="80%">
 <br />
 <p align="center">
-<img src="https://imgur.com/jXU9YV6.png" height="80%" width="80%">
+<img src="https://imgur.com/SB2UDIJ.png" height="80%" width="80%">
 <br />
 <p align="center">
-<img src="https://imgur.com/izfqvWx.png" height="80%" width="80%">
+<img src="https://imgur.com/G0UViIC.png" height="80%" width="80%">
 <br />
 <p align="center">
-<img src="https://imgur.com/rebURyF.png" height="80%" width="80%">
+<img src="https://imgur.com/agimhZ5.png" height="80%" width="80%">
 <br />
+<img src="https://imgur.com/jmnIuff.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/KQ1zHlO.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/nY3nuJt.png" height="80%" width="80%">
+<br />
+
+
 
 8. Now we need to setup a database to store the results. We will use DynamoDB for this. Navigate to DynamoDB and Click on Create Table. Enter the name and create table. Copy the ARN of this table.
 <p align="center">
