@@ -292,6 +292,8 @@ And also change the name of the PC to DC.
 <p align="center">
 <img src=".png" height="80%" width="80%">
 <br />
+
+12. Now, we are going to create a bunch of users in the Active Directory. Go to this
 <h2>Benefits of AWS Serverless Web Application:</h2>
 
 - Scalability: The serverless architecture allows the web application to scale automatically based on demand, ensuring optimal performance even during high traffic periods.
