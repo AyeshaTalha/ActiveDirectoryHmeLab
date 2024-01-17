@@ -293,7 +293,51 @@ And also change the name of the PC to DC.
 <img src=".png" height="80%" width="80%">
 <br />
 
-12. Now, we are going to create a bunch of users in the Active Directory. Go to this
+12. Now, we are going to create a bunch of users in the Active Directory. Open the internet explorer and Go to this [link](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmx2TXhCQ1g0TjZPNTJkSkw0TGI0dkYtX25jQXxBQ3Jtc0treF9aVktJaTZRZ2pUZ1ZBVEw1NWs1MWtoaVBRek9nM08ycEdZVlNYdjVmZ1FfWWZhazFIem9IZXBYZHhzVDJVOTI3WmhYQkpZc2pPWXdSSXFlTVEtLVNiQlpDM3JybDRaWmJmOXVzdi1aU0gya0ZKZw&q=https%3A%2F%2Fgithub.com%2Fjoshmadakor1%2FAD_PS%2Farchive%2Frefs%2Fheads%2Fmaster.zip&v=MHsI8hJmggI) , download the script and save it on the desktop so it would be easy for us to access it.
+<p align="center">
+<img src=".png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src=".png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src=".png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src=".png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src=".png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src=".png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src=".png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src=".png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src=".png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src=".png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src=".png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src=".png" height="80%" width="80%">
+<br />
+
+
+
+
+
+
+
+
 <h2>Benefits of AWS Serverless Web Application:</h2>
 
 - Scalability: The serverless architecture allows the web application to scale automatically based on demand, ensuring optimal performance even during high traffic periods.
