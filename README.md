@@ -331,20 +331,30 @@ And also change the name of the PC to DC.
 <img src=".png" height="80%" width="80%">
 <br />
 
+13. Let's go ahead and create the second machine Client1. Go to Virtual Box and create a new VM named Client1. Configure the network settings to connect to the internal network rather than to the internet. Use the Windows 10 ISO we downloaded in Step 2. Configure it with minimum settings.
+<p align="center">
+<img src="https://imgur.com/CYZorF6.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/XCG05DT.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/wigmcww.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/49roaKl.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/EjhWllb.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/OztacqF.png" height="80%" width="80%">
+<br />
+
+14. 
 
 
 
 
 
 
-
-<h2>Benefits of AWS Serverless Web Application:</h2>
-
-- Scalability: The serverless architecture allows the web application to scale automatically based on demand, ensuring optimal performance even during high traffic periods.
-
-- Cost-effectiveness: With serverless, you only pay for the actual usage of resources, eliminating the need for provisioning and managing servers, which can result in cost savings.
-
-- High availability: AWS services, such as Lambda and DynamoDB, are designed to be highly available and fault-tolerant, ensuring the web application remains accessible even in the event of failures.
-
-- Reduced operational overhead: Serverless architecture offloads the operational tasks, such as server management, to AWS, allowing developers to focus more on application development and business logic.
-<br/>
