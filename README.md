@@ -324,12 +324,6 @@ And also change the name of the PC to DC.
 <p align="center">
 <img src="https://imgur.com/fp8eGJ5.png" height="80%" width="80%">
 <br />
-<p align="center">
-<img src=".png" height="80%" width="80%">
-<br />
-<p align="center">
-<img src=".png" height="80%" width="80%">
-<br />
 
 13. Let's go ahead and create the second machine Client1. Go to Virtual Box and create a new VM named Client1. Configure the network settings to connect to the internal network rather than to the internet. Use the Windows 10 ISO we downloaded in Step 2. Configure it with minimum settings.
 <p align="center">
@@ -350,8 +344,73 @@ And also change the name of the PC to DC.
 <p align="center">
 <img src="https://imgur.com/OztacqF.png" height="80%" width="80%">
 <br />
+<p align="center">
+<img src="https://imgur.com/jVebQwh.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/8LpJU2t.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/hjuQXm9.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/cyr0Lqc.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/4l1mH87.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/I6PQenu.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/NgEfAB2.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src=".png" height="80%" width="80%">
+<br />
 
-14. 
+14. GO to the command prompt and check if the internet is working. Check if the Client can connect to the domain controller by typing ping domain.com. If the ping is working than we have successfully established connection with the Domain Controller.
+ <p align="center">
+<img src="https://imgur.com/fW72Syp.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/CyaFUlg.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/Wai0vrO.png" height="80%" width="80%">
+<br />
+
+
+ 14. Let's reconfigure the machine name to CLIENT1 and add it to the domain group. After adding CLIENT1 to  mydomain.com, the machine is restarted and we can sign in with anyone of the created users on the CLIENT1 machine as well. We can check this by going back to our DC machine and seeing if our CLIENT1 machine was added to the Active Directory. 
+<p align="center">
+<img src="https://imgur.com/oPUNQUe.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/mxTFt9D.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/Him17QR.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/SxaUuFO.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/u0Njx4o.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/cBG01ub.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/EzlDXyS.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/BY8A7m9.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/wynkMme.png" height="80%" width="80%">
+<br />
+
+ 
 
 
 
