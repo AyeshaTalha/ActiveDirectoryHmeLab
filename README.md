@@ -223,15 +223,75 @@ And also change the name of the PC to DC.
 <img src="https://imgur.com/SjyTbj5.png" height="80%" width="80%">
 <br />
 
-12. Click on the URL of the website and there it is. Enter a Base number and an exponent number and hit Calculate. It will give the result.
+10. The next thing we are going to do is install RAS/NAT (RemoteAccessServer / NetworkAddressTranslation). This server will allow our Client which is on the private virtual network to have access to the internet through DC. Go to Server Manager. Click on Add Roles and Features. 
 <p align="center">
-<img src="https://imgur.com/XDJm1gT.png" height="80%" width="80%">
+<img src="https://imgur.com/LY4FNCD.png" height="80%" width="80%">
 <br />
 <p align="center">
-<img src="https://imgur.com/1tqGACw.png" height="80%" width="80%">
+<img src="https://imgur.com/n3SmKEG.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/tlVabDY.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/jqMQo4x.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/1uYRvel.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/oPkKU56.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/zUPWVoY.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/IGAPyQT.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/WWKqa6q.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/uLTwATN.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/SVXiJ8t.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/5DqfAR9.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/QVGttta.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/thtPFMj.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/JVcyfOa.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/aiCi0vE.png" height="80%" width="80%">
 <br />
 
-
+11. Now we have to setup a DHCP server on our Domain Controller. This will allow the users on the Client machine to get an IP address and browse on the internet eventhough there are on a private network. Go to the Server Manager > Add Roles and Features > DHCP Server > Next > Install.
+<p align="center">
+<img src="https://imgur.com/O5NDDMz.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/1RXOa2z.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/vdrqRU5.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src="https://imgur.com/6pL7FgD.png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src=".png" height="80%" width="80%">
+<br />
+<p align="center">
+<img src=".png" height="80%" width="80%">
+<br />
 <h2>Benefits of AWS Serverless Web Application:</h2>
 
 - Scalability: The serverless architecture allows the web application to scale automatically based on demand, ensuring optimal performance even during high traffic periods.
