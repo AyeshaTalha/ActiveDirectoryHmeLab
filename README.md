@@ -369,7 +369,7 @@ And also change the name of the PC to DC.
 <img src=".png" height="80%" width="80%">
 <br />
 
-14. GO to the command prompt and check if the internet is working. Check if the Client can connect to the domain controller by typing ping domain.com. If the ping is working than we have successfully established connection with the Domain Controller.
+14. Go to the command prompt and check if the internet is working. Check if the Client can connect to the domain controller by typing ping domain.com. If the ping is working than we have successfully established connection with the Domain Controller.
  <p align="center">
 <img src="https://imgur.com/fW72Syp.png" height="80%" width="80%">
 <br />
@@ -381,7 +381,7 @@ And also change the name of the PC to DC.
 <br />
 
 
- 14. Let's reconfigure the machine name to CLIENT1 and add it to the domain group. After adding CLIENT1 to  mydomain.com, the machine is restarted and we can sign in with anyone of the created users on the CLIENT1 machine as well. We can check this by going back to our DC machine and seeing if our CLIENT1 machine was added to the Active Directory. 
+15. Let's reconfigure the machine name to CLIENT1 and add it to the domain group. After adding CLIENT1 to  mydomain.com, the machine is restarted and we can sign in with anyone of the created users on the CLIENT1 machine as well. We can check this by going back to our DC machine and seeing if our CLIENT1 machine was added to the Active Directory. 
 <p align="center">
 <img src="https://imgur.com/oPUNQUe.png" height="80%" width="80%">
 <br />
