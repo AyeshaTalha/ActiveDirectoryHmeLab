@@ -155,8 +155,6 @@ And also change the name of the PC to DC.
 <br />
 
 6. Now, we have to promote this machine as the domain controller.To do so, click on the little flag option on the righthand corner of the screen and click on promote this achine as the domain controller. Click on Add a new forest and enter the domain name as mydoamin.com. Follow the steps and just click next to every option and click on install. The machine will reboot.
-<img src=".png" height="80%" width="80%">
-<br />
 <p align="center">
 <img src="https://imgur.com/SB2UDIJ.png" height="80%" width="80%">
 <br />
